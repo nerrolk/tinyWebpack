@@ -1,0 +1,32 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add babylon babel-traverse babel-core babel-preset-env
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://r.cnpmjs.org/core-js/download/core-js-2.6.11.tgz: Parse Error
+      at Socket.socketOnData (_http_client.js:442:20)
+      at Socket.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+      at readableAddChunk (_stream_readable.js:264:11)
+      at Socket.Readable.push (_stream_readable.js:219:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:94:17)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
