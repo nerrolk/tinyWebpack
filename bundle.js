@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-02-21 18:30:06
+ * @LastEditTime: 2020-02-24 15:48:20
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /tinyWebpack/bundle.js
+ */
 (function (modules) {
   //创建require函数， 它接受一个模块ID（这个模块id是数字0，1，2） ，它会在我们上面定义 modules 中找到对应是模块.
   function require(id) {

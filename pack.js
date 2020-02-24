@@ -74,7 +74,6 @@ function createGraph(entry) {
       queue.push(child);
     });
   }
-  // console.log(queue)
   return queue;
 }
 
@@ -91,7 +90,6 @@ function bundle(graph) {
       ${JSON.stringify(mod.mapping)},
     ],`;
   });
-  // console.log(modules);
 
   //require, module, exports 是 cjs的标准不能再浏览器中直接使用，所以这里模拟cjs模块加载，执行，导出操作。
   const result = `
@@ -106,7 +104,6 @@ function bundle(graph) {
         const module = {exports:{}};
         //执行每个模块的代码。
         fn(localRequire,module,module.exports);
-        console.log(module);
         return module.exports;
       }
       //执行入口文件，
